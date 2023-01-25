@@ -1,0 +1,10 @@
+name: Publish
+
+on:
+  push:
+
+jobs:
+  publish:
+    uses: ./.github/workflows/publish.yml
+    with:
+      environment: production
