@@ -5,6 +5,7 @@ on:
 
 jobs:
   publish:
+    if: false
     uses: ./.github/workflows/publish.yml
     with:
       environment: production
