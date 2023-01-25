@@ -11,5 +11,3 @@ on:
 jobs:
   publish:
     uses: mink-psi/private-test/.github/workflows/publish.yml@main
-    with:
-      environment: ${{inputs.environment}}
