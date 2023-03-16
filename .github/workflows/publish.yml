@@ -1,13 +1,12 @@
 name: Publish
 
 on:
-  workflow_call:
-    inputs:
-      environment:
-        description: 'Hosting environment'
-        required: true
-        type: string
+  pull_request_target:
+    branches:
+      - server/*
+    types:
+      - closed
 
 jobs:
   publish:
-    uses: mink-psi/.github/workflows/publish.yml@main
+    uses: mink-psi/shared/.github/workflows/publish.yml@main
